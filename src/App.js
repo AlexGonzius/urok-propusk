@@ -5,6 +5,7 @@ import Header from './containers/Header';
 import Footer from './containers/Footer';
 import Page404 from './pages/Page404';
 import Page2 from './pages/Page2';
+import Page3 from './pages/Page3';
 import './App.css';
 
 
@@ -17,6 +18,7 @@ function App() {
           <Route exact path='/' Component={MainPage}/>
           <Route path='/page1' Component={Page1}/>
           <Route path='/page2' Component={Page2}/>
+          <Route path='/page3' Component={Page3}/>
 
           <Route path='/404' Component={Page404}/>
           <Route path='*' element={<Navigate to='/404' replace />}/>
